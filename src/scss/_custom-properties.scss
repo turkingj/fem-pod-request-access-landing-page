@@ -1,26 +1,25 @@
+// defaults
 :root {
   --ff-body: 'Chivo', sans-serif;
 
   // ** colours
 
-  --clr-primary-400: #C2CBE5;
+  --clr-primary-400: #c2cbe5;
 
-  --clr-accent-300: #B3FFE2;
-  --clr-accent-400: #54E6AF;
+  --clr-accent-300: #b3ffe2;
+  --clr-accent-400: #54e6af;
 
-  --clr-neutral-100: #FFFFFF;
-  --clr-neutral-400: #5A668A;
-  --clr-neutral-700: #2C344B;
+  --clr-neutral-100: #ffffff;
+  --clr-neutral-400: #5a668a;
+  --clr-neutral-700: #2c344b;
   --clr-neutral-900: #121725;
 
-  --clr-warn-400: #FB3E3E;
+  --clr-warn-400: #fb3e3e;
 
   // ** font sizes
-
-  // mobile
-  --fs-300: 0.875rem;  // 14px
+  --fs-300: 0.875rem; // 14px
   --fs-400: 0.9375rem; // 15px
-  --fs-900: 1.625rem;  // 26px
+  --fs-900: 1.625rem; // 26px
 
   // ** font weights
   --fw-300: 300;
@@ -30,4 +29,12 @@
 
   --spacer: 1rem;
   --br: 1.75rem; // 28px
+}
+
+// tablet
+@media screen and (min-width: 768px) {
+  :root {
+    --fs-400: 1.125rem; // 15px > 18px
+    --fs-900: 3rem;     // 26px > 48px
+  }
 }

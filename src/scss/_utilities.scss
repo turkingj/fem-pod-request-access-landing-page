@@ -1,3 +1,19 @@
 .flow-content > * + * {
   margin-top: var(--spacer);
 }
+
+.container {
+  max-width: 90rem; // 1440px
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1.5rem; // 24px
+}
+
+
+// tablet
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0 2.4375rem; // 24px > 39px
+  }
+}
+
