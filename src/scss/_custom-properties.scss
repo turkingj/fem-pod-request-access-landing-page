@@ -1,0 +1,33 @@
+:root {
+  --ff-body: 'Chivo', sans-serif;
+
+  // ** colours
+
+  --clr-primary-400: #C2CBE5;
+
+  --clr-accent-300: #B3FFE2;
+  --clr-accent-400: #54E6AF;
+
+  --clr-neutral-100: #FFFFFF;
+  --clr-neutral-400: #5A668A;
+  --clr-neutral-700: #2C344B;
+  --clr-neutral-900: #121725;
+
+  --clr-warn-400: #FB3E3E;
+
+  // ** font sizes
+
+  // mobile
+  --fs-300: 0.875rem;  // 14px
+  --fs-400: 0.9375rem; // 15px
+  --fs-900: 1.625rem;  // 26px
+
+  // ** font weights
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-700: 700;
+  --fw-900: 900;
+
+  --spacer: 1rem;
+  --br: 1.75rem; // 28px
+}

@@ -1,0 +1,11 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url('../assets/mobile/image-host.jpg');
+  background-repeat: no-repeat;
+  background-color: var(--clr-neutral-900);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: top right;
+}

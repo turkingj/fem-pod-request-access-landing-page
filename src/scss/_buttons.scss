@@ -1,0 +1,11 @@
+.btn {
+  display: block;
+  background-color: var(--clr-accent-400);
+  border: 0;
+  color: var(--clr-neutral-900);
+  font-size: var(--fs-300);
+  font-weight: var(--fw-700);
+  line-height: 2;
+  padding: 0.642857em 0; // 9px
+  border-radius: var(--br);
+}

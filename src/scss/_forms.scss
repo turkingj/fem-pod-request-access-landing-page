@@ -1,0 +1,15 @@
+input {
+  background-color: var(--clr-neutral-700);
+  border: 0;
+  border-radius: var(--br);
+  font-size: var(--fs-300);
+  font-weight: var(--fw-700);
+  line-height: 1.75em;  // 28px
+  color: var(--clr-neutral-100);
+  opacity: .5;
+  padding: 0.642857em 2rem;
+}
+
+input:active, input:focus {
+  opacity: 1;
+}
