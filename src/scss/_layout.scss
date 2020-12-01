@@ -1,11 +1,18 @@
-body {
+.podcast-landing-page {
   color: var(--clr-primary-400);
   background-color: var(--clr-neutral-900);
 }
 
-.podcast-landing-page {}
-
-// app-root { see app.component.scss for styles!  }
+app-root {
+  display: block;
+  min-height: 100vh;
+  background-image: url('../assets/mobile/image-host.jpg');
+  background-repeat: no-repeat;
+  background-color: var(--clr-neutral-900);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: top center;
+}
 
 .header {
   padding-top: 3.875rem; // damn you collapsing margins!
@@ -57,6 +64,25 @@ main {
 
 // tablet
 @media screen and (min-width: 768px) {
+
+  .podcast-landing-page {
+    background-image: url('../assets/desktop/bg-pattern-dots.svg');
+    background-repeat: no-repeat;
+    background-position: 2rem bottom;
+    min-height: auto;
+    padding-bottom: 16.0625rem; // 257px
+    height: 100%;
+  }
+
+  app-root {
+    background-color: transparent;
+    background-image: url('../assets/tablet/image-host.jpg');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 60% 100%;
+    min-height: auto;
+  }
+
   .header {
     padding-top: 2.4375rem;
 
@@ -99,13 +125,25 @@ main {
   .signup .podcast-companies img {
     height: 29px;
   }
-
-  footer {
-    min-height: 250px;
-    background-image: url('../assets/desktop/bg-pattern-dots.svg');
-    background-repeat: no-repeat;
-    background-position: 2.4375rem bottom;
-  }
 }
 
-// @media screen and (min-width: 1440px) {}
+@media screen and (min-width: 1440px) {
+  .podcast-landing-page {
+    background-image: none;
+    padding-top: 8.125rem; // 130px
+    padding-bottom: 8.125rem; // 130px
+  }
+
+  app-root {
+    background-color: transparent;
+    background-image: url('../assets/desktop/bg-pattern-dots.svg'), url('../assets/desktop/image-host.jpg');
+    background-repeat: no-repeat no-repeat;
+    background-position: 110% 100%, top right;
+    background-size: auto, contain;
+    min-height: auto;
+  }
+
+  .signup {
+    width: 55%;
+  }
+}
