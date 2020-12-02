@@ -8,11 +8,21 @@
   line-height: 2;
   padding: 0.642857em 0; // 9px
   border-radius: var(--br);
+  cursor: pointer;
 }
 
+.btn:hover {
+  background-color: var(--clr-accent-300);
+}
+
+.btn:disabled {
+  opacity: 0.4;
+  pointer-events: none;
+  cursor: not-allowed;
+}
 
 @media screen and (min-width: 768px) {
   .btn {
-
+    border: 5px solid var(--clr-neutral-700);
   }
 }

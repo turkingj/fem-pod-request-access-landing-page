@@ -4,12 +4,18 @@ input {
   border-radius: var(--br);
   font-size: var(--fs-300);
   font-weight: var(--fw-700);
-  line-height: 1.75em;  // 28px
-  color: var(--clr-neutral-100);
-  opacity: .5;
-  padding: 0.642857em 2rem;
+  line-height: 1.75em; // 28px
+  color: rgba(255, 255, 255, 0.5); // var(--clr-neutral-100);
+  padding: 0.642857rem 0 0.642857rem 2rem;
 }
 
-input:active, input:focus {
-  opacity: 1;
+input:active,
+input:focus {
+  color: rgba(255, 255, 255, 1);
+}
+
+.signup-form__error {
+  font-size: var(--fs-200);
+  font-weight: var(--fw-700);
+  color: var(--clr-warn-400);
 }

@@ -1,3 +1,14 @@
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
 .flow-content > * + * {
   margin-top: var(--spacer);
 }
@@ -9,7 +20,6 @@
   padding: 0 1.5rem; // 24px
 }
 
-
 // tablet
 @media screen and (min-width: 768px) {
   .container {
@@ -17,3 +27,9 @@
   }
 }
 
+// desktop
+@media screen and (min-width: 1440px) {
+  .container {
+    padding: 0 10.3125rem; // 39px > 165px
+  }
+}

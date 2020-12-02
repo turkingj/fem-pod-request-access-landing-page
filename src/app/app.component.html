@@ -1,5 +1,5 @@
 <header class="header container">
-  <img src="assets/desktop/logo.svg" alt="Pod" class="logo" />
+  <img src="assets/desktop/logo.svg" alt="Pod logo" class="logo" />
 </header>
 
 <main class="container">
@@ -23,10 +23,21 @@
       <li><img src="/assets/desktop/pocket-casts.svg" alt="Pocket Casts" /></li>
     </ul>
 
-    <div class="form">
-      <label for="email"></label>
-      <input type="email" name="email" placeholder="Email address" id="email" />
-      <button class="btn">Request Access</button>
-    </div>
+    <form [formGroup]="form" class="signup-form" novalidate>
+      <div class="signup-form__item">
+        <label for="email" class="visuallyhidden">Email</label>
+        <input
+          type="email"
+          formControlName="email"
+          placeholder="Email address"
+          id="email"
+          aria-label="email"
+        />
+      </div>
+
+      <button class="btn" [disabled]="form.invalid" (click)="requestAccess()">Request Access</button>
+    </form>
+
+    <span class="signup-form__error" *ngIf="email.invalid">{{ emailControlInvalid() }}</span>
   </section>
 </main>
