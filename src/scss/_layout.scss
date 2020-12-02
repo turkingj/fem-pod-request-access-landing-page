@@ -63,13 +63,6 @@ main {
 
 // tablet
 @media screen and (min-width: 768px) {
-  .podcast-landing-page::after {
-    display: block;
-    content: url('../assets/desktop/bg-pattern-dots.svg');
-    margin-top: 9.375rem; // 150px
-    padding-left: 2.4375rem;
-  }
-
   app-root {
     min-height: auto;
     background-color: transparent;
@@ -83,6 +76,14 @@ main {
     background-position: 0, 17.5% top;
     background-size: 35%, cover;
     background-blend-mode: normal;
+    position: relative;
+  }
+
+  app-root::after {
+    position: absolute;
+    content: url('../assets/desktop/bg-pattern-dots.svg');
+    bottom: -9.375rem; // 150px
+    left: 2.4375rem; // 39px
   }
 
   .header {
@@ -164,14 +165,6 @@ main {
     padding-bottom: 8.125rem; // 130px
   }
 
-  .podcast-landing-page::after {
-    position: absolute;
-    right: 0;
-    top: 77.5%;
-    margin-top: 0;
-    padding-left: 0;
-  }
-
   app-root {
     background-image: linear-gradient(
         180deg,
@@ -181,7 +174,12 @@ main {
       url('../assets/desktop/image-host.jpg');
     background-position: 0, right top;
     background-size: 36.7%, 63.3%;
-    position: relative;
+  }
+
+  app-root::after {
+    left: auto;
+    bottom: -3.75rem; // 60px
+    right: 0;
   }
 
   .header {
